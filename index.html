@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <script src="https://kit.fontawesome.com/877c6bd2d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <article data-testid="test-profile-card" aria-label="Mayowa Profile Card">
+        <!-- Profile Header-->
+        <header data-testid="test-profile-header" aria-label="Profile Header">
+            <h2 data-testid="test-user-name" aria-label="User's fullname">Mayowa Lawal</h2>
+        </header>
+
+        <div id="content-card">
+            <div class="complete-bio">
+                
+                <!-- Avatar -->
+                <figure>
+                    <img src="Mayor0.jpg" alt="Profil picture of Mayowa" data-testid="test-user-avatar">
+                    <figcaption>MayLaw</figcaption>
+                </figure>
+
+                <!-- Short Biography -->
+                <p class="bio" data-testid="test-user-bio">A Frontend developer aspiring Software Engineer passionate about clean UI and accessibility. Loves coding and basketball</p>
+        
+                <!-- Current  Time -->
+            </div>
+            <div class="time-section">
+                <p>Current Time (ms):</p>
+                <span class="timestamp" data-testid="test-user-time"></span>
+            </div>
+            
+            <!-- Social Links -->
+            <nav data-testid="test-user-social-links" aria-label="Social media links">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a data-testid="test-user-social-twitter" href="https://x.com/Mayor_May1" target="_blank" rel="noopener noreferrer" aria-label="Twitter" ><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a data-testid="test-user-social-github" href="https://github.com/Mayor-king" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/mayowa-lawal1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+    
+            <!-- Hobbies -->
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Reading tech blogs</li>
+                    <li>Basketball</li>
+                    <li>Hanging with Friends</li>
+                </ul>
+            </section>
+    
+            <!-- Dislikes -->
+            <section aria-labelledby="dislikes-heading">
+                <h3>Dislikes</h3>
+                <ul id="dislikes" data-testid="test-user-dislikes">
+                    <li>Procrastination</li>
+                    <li>Messy code</li>
+                    <li>Slow Wi-Fi</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+</body>
+</html>
