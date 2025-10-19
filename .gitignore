@@ -1,0 +1,25 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Dependencies (if you add npm packages later)
+node_modules/
+package-lock.json
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
