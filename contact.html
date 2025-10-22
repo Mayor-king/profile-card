@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayowa || Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/877c6bd2d5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <aside>
+        <nav aria-label="Main Navigation">
+            <!-- <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> -->
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content  -->
+    <main>
+        <article data-testid="test-content-page"aria-label="Contact Form">
+            <!-- Header -->
+            <header>
+                <h1>Get in touch</h1>
+                <p>Feel free to drop us a line below!</p>
+            </header>
+
+            <!-- Form Section -->
+            <section>
+
+                <div class="success-message" data-testid="test-contact-success" role="alert"  aria-live="polite">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <div>
+                        <strong>Thank you!</strong>Your message has been sent successfully. I'll get back to you soon.
+                    </div>
+                </div>
+                <form data-testid="test-content-form" aria-label="Contact form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullname">Full Name <span>*</span></label>
+                        <input data-testid="test-contact-name" type="text" id="fullname" name="fullname" placeholder="Enter your full name" aria-describedby="fullName-error" required>
+                        <div class="error-message" id="fullName-error" data-testid="test-contact-error-name" role="alert">
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span>*</span></label>
+                        <input data-testid="test-contact-email" type="email" id="email" name="email" placeholder="Enter your email address" aria-describedby="email-error" required>
+                        <div class="error-message" id="email-error" data-testid="test-contact-error-email" role="alert">
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject <span>*</span></label>
+                        <input data-testid="test-contact-subject" type="text" id="subject" name="subject" placeholder="What is this about" aria-describedby="subject-error" required>
+                        <div class="error-message" id="subject-error" data-testid="test-contact-error-subject" role="alert">
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span>*</span></label>
+                        <textarea data-testid="test-contact-message" name="message" id="message" required placeholder="Please share your message or inquiry" aria-describedby="message"></textarea>
+                        <div class="error-message" id="message-error" data-testid="test-contact-error-message" role="alert">
+                            <i class="fa-solid fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <button data-testid="test-contact-submit" type="submit" id="submitBtn" aria-label="Submit contact form">Send Message</button>
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
